@@ -1,0 +1,23 @@
+<html>
+<style>
+body {
+  background-color:orange;
+  color:white;
+  margin:0 auto;
+  height:100vh;
+  text-align:center;
+  font-size:20px;
+  font-family:arial;
+  }
+  
+</style>
+<head>
+<title>GA-TASTING</title>
+</head>
+
+<body>
+Google Analytics_Page_1
+</body>
+
+
+</html>
