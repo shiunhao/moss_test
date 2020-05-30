@@ -36,7 +36,10 @@ body {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+gtag('event', '分享', {
+  'event_category': '按鈕點擊',
+  'event_label': 'Facebook'
+});
   gtag('config', 'UA-167521553-1');
 </script>
  
@@ -51,8 +54,7 @@ Hello Google Analytics
     
 </div> 
   <a target="_blank" href="page_1.html" onclick="ga('send', 'event', 'Link', 'Click', 'next');">  next </a>
-  <a href="https://www.techmarks.com" title="Techmarks" target="_blank" onClick="ga('send', 'event', 'Link', 'Click', 'GA分析流量範例');">Techmarks首頁</a>
-  <button onclick="ga('send', 'event', '導覽清單', '點擊', '登入會員');" id="loginMember" class="btn btn-primary">登入會員</button>
+
   
   
   
