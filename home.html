@@ -56,21 +56,7 @@ Hello Google Analytics
   
   
   
-  <script>
-//確保html載入後執行
-window.addEventListener("DOMContentLoaded", function() {
-  //監聽登入按鈕點擊 執行ga的方法 id="loginMember"
-  document.querySelector('#loginMember').addEventListener('click',function(e){
-    ga('send', 'event', '導覽清單', '點擊', '登入會員');
-  });
 
-  //監聽註冊按鈕 id="register"
-  document.querySelector('#register').addEventListener('click',function(e){
-    ga('send', 'event', '導覽清單', '點擊', '註冊會員', 200);
-  });
-}, false);
-
-</script>
 </body>
 
 
