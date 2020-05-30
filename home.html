@@ -54,6 +54,20 @@ Hello Google Analytics
   <a href="https://www.techmarks.com" title="Techmarks" target="_blank" onClick="ga('send', 'event', 'Link', 'Click', 'GA分析流量範例');">Techmarks首頁</a>
   <button onclick="ga('send', 'event', '導覽清單', '點擊', '登入會員');" id="loginMember" class="btn btn-primary">登入會員</button>
 </body>
+<script>
+//確保html載入後執行
+window.addEventListener("DOMContentLoaded", function() {
+  //監聽登入按鈕點擊 執行ga的方法 id="loginMember"
+  document.querySelector('#loginMember').addEventListener('click',function(e){
+    ga('send', 'event', '導覽清單', '點擊', '登入會員');
+  });
 
+  //監聽註冊按鈕 id="register"
+  document.querySelector('#register').addEventListener('click',function(e){
+    ga('send', 'event', '導覽清單', '點擊', '註冊會員', 200);
+  });
+}, false);
+
+</script>
 
 </html>
