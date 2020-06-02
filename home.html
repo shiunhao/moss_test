@@ -43,7 +43,10 @@ body {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('set', {'user_id': 'USER_ID'}); // 使用已登入的 user_id 設定 User ID。
-  gtag('config', 'UA-167521553-1');
+  gtag('config', 'UA-167521553-1', {
+  'user_id': 'USER_ID'
+});
+
 </script>
  
 
